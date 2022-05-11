@@ -6,7 +6,8 @@ body{margin:0;padding:0;background-color:rgb(245,245,245);width:100%;}
 
 header
  { 
-  overflow:hidden;
+  position:fixed;
+  background-color:rgb(245,245,245);
   width:100%; 
   padding-left: 15px;
   padding-right: 15px;
@@ -60,6 +61,7 @@ section{width:100%;}
      background: url("images/bg1.png") no-repeat center top;
      background-size:cover;
      aspect-ratio: 100 / 40;
+     margin-top:7%;
  }
 
 
