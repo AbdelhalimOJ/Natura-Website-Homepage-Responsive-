@@ -1,4 +1,4 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box; width:100%;}
 html { font-family:"Gotham Pro"; }
 body{margin:0;padding:0;background-color:rgb(245,245,245);width:100%;}
 
@@ -9,35 +9,28 @@ header
   position:fixed;
   background-color:rgb(245,245,245);
   width:100%; 
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
- }
+  padding-left: 5em;
+  padding-right: 5em;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap:2em;
+}
 
 /*header items*/
 
- header .topnav a {
+ header  a {
     float:left;
     display:block;
     color: black;
     text-align: center;
-    padding: 3% 2%;
+    padding: 2% 2%;
     text-decoration: none;
-    font-size: 18px;
-    font-weight:lighter;}
+    font-size: 1em;
+    font-weight:lighter;
+font-size:1.2em}
 
-  header .topnav .bt1{margin-left:12%;}
-
-header .logo
-{   float:left;
-    color: black;
-    padding: 2% 3%;
-    text-decoration: none;
-    margin-right:auto;
-    margin-left:12%;
-    font-weight:bold;
-     font-size: 24px;}
 
  
  .bt1:hover,.bt2:hover,.bt3:hover,.bt4:hover
@@ -45,12 +38,12 @@ header .logo
      color:rgb(245,245,245);
      background-color:rgb(247,188,88);}
 
- .topnav .current
+ .current
  {
      color:white;
      background-color:rgb(247,188,88);}
 
-@media screen and (max-width: 650px){ .topnav a:not(:first-child) {display: none;} }
+
 
 /* section one */
 
@@ -60,40 +53,50 @@ section{width:100%;}
      display:inline-block;
      background: url("images/bg1.png") no-repeat center top;
      background-size:cover;
-     aspect-ratio: 100 / 40;
+    aspect-ratio: 100 / 40;
      margin-top:7%;
  }
+
 
 
  .sec1h1
  {  display:block;
      margin-top:10%;
-     margin-left:15%;
-     font-size:40px;
+     font-size:1.8em;
      letter-spacing: 5px;
      line-height:140%;
      font-weight:400;}
 
  .sec1h2
  {   display:block;
-     margin-left:15%;
-     font-size:14px;
+     font-size:1.3em;
      letter-spacing: 1px;
      font-weight:200;}
 
  .more
  {  display:block;
-    width:15%;
-    margin-left:15%;
+    width:20%;
     margin-bottom:5%;
     color: white;
     background-color:rgb(247,188,88);
     text-align: center;
-    padding: 1.15% 4%;
+    padding: 1.5% 4%;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1em;
     font-weight:200;
  }
+/* display:block;
+       width:45%;
+       margin-left:0;
+       margin-bottom:5%;
+       color: white;
+       background-color:rgb(247,188,88);
+       text-align: center;
+       padding: 4% 4%;
+       text-decoration: none;
+       font-size: 1em;
+       font-weight:200;*/
+
 
 
 
@@ -112,7 +115,7 @@ section{width:100%;}
      padding-top:2%; padding-bottom:0.2%;
      color:black;
      text-align: center;
-     font-size:30px;
+     font-size:1em;
      letter-spacing: 3px;
      font-weight:400;
  }
@@ -123,7 +126,7 @@ section{width:100%;}
      padding-top:0.2%; padding-bottom:0.2%;
      color:rgb(168,168,168);
      text-align:center;
-     font-size:16px;
+     font-size:1em;
      letter-spacing: 3px;
      font-weight:200;
  }
@@ -132,7 +135,7 @@ section{width:100%;}
  {
      color:rgb(108,108,108);
      text-align:left;
-     font-size:30px;
+     font-size:1em;
      letter-spacing: 1px;
      font-weight:400;
  }
@@ -143,7 +146,7 @@ p
     color:rgb(108,108,108);
     width:100%;
     text-align:left;
-    font-size:16px;
+    font-size:1em;
     letter-spacing: 1px;
     font-weight:200;
  }
@@ -151,14 +154,10 @@ p
 /* boxes styline */
 
  .box1, .box2, .box3
- {
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
- }
+ {display: flex;}
  
- .box1 .p1 { align-self: flex-start;width:100%;margin-left:15%;}
- .box1 .img1{max-width:130%;align-self:center;width:100%;margin-right:10%;padding:2%;}
+ .box1 .p1 { align-self: flex-start;width:100%;;}
+ .box1 .img1{max-width:130%;align-self:center;width:100%;padding:2%;}
  .box2 .img4 { align-self: flex-end;padding:2%;}
 
  .box1 .more2
@@ -170,9 +169,9 @@ p
        color: white;
        background-color:rgb(247,188,88);
        text-align: center;
-       padding: 4% 4%;
+       padding: 2% 4%;
        text-decoration: none;
-       font-size: 14px;
+       font-size: 1em;
        font-weight:200;
     }
 
@@ -203,7 +202,7 @@ p
 }
 
  
- .box3 .img5 { align-self: center;width:60%;margin-left:10%;padding:4%;}
+ .box3 .img5 { align-self: center;width:60%;;padding:4%;}
  .box3 .box4 { align-self: center;width:100%;}
 
 img /* Images transition */
@@ -221,7 +220,7 @@ img:hover{opacity:0.6;}
 {
     color:black;
     text-align:left;
-    font-size:18px;
+    font-size:1em;
     letter-spacing: 1px;
     font-weight:400;
 }
@@ -230,13 +229,13 @@ h3
 {
     color:rgb(247,188,88);
     text-align:left;
-    font-size:14px;
+    font-size:1em;
     letter-spacing: 1px;
     font-weight:400;
 }
 
-.sec4 p{font-size:14px;}
-.sec4 a{font-size:14px;;font-weight:400;color:black;}
+.sec4 p{font-size:1em;}
+.sec4 a{font-size:1em;;font-weight:400;color:black;}
 
 /* section five */
 
@@ -247,27 +246,28 @@ h3
     height:auto;
 }
 
-form{padding:2%;}
+form{padding:5%;
+display:flex;}
 
 button
-{   padding: 1.15% 4%;
+{   padding: 2% 4%;
     background-color:rgb(247,188,88);
     border:0;
     color:white;
-    font-size:14px;
+    font-size:1em;
     letter-spacing: 2px;}
 
-input{border:0;
-    padding: 1.15% 4%;
-    width:50%;
+input{
+border:0;
+padding: 1.15% 4%; 
 background-color:white;
 color:black;
-font-size:14px;
-letter-spacing:1px;
-margin-left:17%;}
+font-size:1em;
+letter-spacing:1px;}
 
 
 /* footer */
+
 footer
 {
     width:100%;
@@ -282,16 +282,31 @@ footer span
 {
     color:white;
     text-align:left;
-    font-size:14px;
+    font-size:1em;
     letter-spacing: 1px;
     font-weight:400;
     padding-left:2.2%;
 }
 
-footer .col1{width:100%;padding:2%;margin-left:10%;}
+footer .col1{width:100%;padding:2%;}
 footer .col2{width:100%;padding:2%;}
 footer .col3{width:100%;padding:2%;}
 
-footer p {font-size:12px;margin-left:2%;font-weight:400;line-height:20px;padding-left:0;}
-footer a {font-size:12px;font-weight:400;color:rgb(168,168,168);line-height:20px;}
+footer p {font-size:1em;;font-weight:400;line-height:20px;padding-left:0;}
+footer a {font-size:1em;font-weight:400;color:rgb(168,168,168);line-height:20px;}
 footer .col3 p{width:100%}
+
+*{font-size:1em;}
+
+
+/*padding between sections*/
+
+.sec1,.sec2,.sec3,.sec4,.sec5,footer{padding:5%;}
+
+/* mobile screen settings*/
+@media screen and (max-width: 650px){ .topnav a:not(:first-child) {display: none;}
+footer{justify-content: center;flex-direction:column;align-items:flex-end;} 
+.box1, .box2, .box3,header{flex-direction: column;}
+body .sec1{margin-top:38%;}
+.more,.more2{width:100%;}
+.sec1,.sec2,.sec3,.sec4,.sec5,footer{padding:10%;}}
