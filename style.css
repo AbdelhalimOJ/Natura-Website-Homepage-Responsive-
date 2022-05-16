@@ -61,11 +61,11 @@ section{width:100%;}
 
  .sec1h1
  {  display:block;
-     margin-top:10%;
      font-size:1.8em;
-     letter-spacing: 5px;
+     letter-spacing: 4px;
      line-height:140%;
-     font-weight:400;}
+     font-weight:400;
+    margin-top:3em;}
 
  .sec1h2
  {   display:block;
@@ -76,7 +76,7 @@ section{width:100%;}
  .more
  {  display:block;
     width:20%;
-    margin-bottom:5%;
+   /* margin-bottom:5%;*/
     color: white;
     background-color:rgb(247,188,88);
     text-align: center;
@@ -85,20 +85,6 @@ section{width:100%;}
     font-size: 1em;
     font-weight:200;
  }
-/* display:block;
-       width:45%;
-       margin-left:0;
-       margin-bottom:5%;
-       color: white;
-       background-color:rgb(247,188,88);
-       text-align: center;
-       padding: 4% 4%;
-       text-decoration: none;
-       font-size: 1em;
-       font-weight:200;*/
-
-
-
 
 /* section two */
 
@@ -110,24 +96,22 @@ section{width:100%;}
  }
 
  .sec2h1
- {
-     margin:0;
+ {  margin:0;
      padding-top:2%; padding-bottom:0.2%;
      color:black;
      text-align: center;
-     font-size:1em;
-     letter-spacing: 3px;
+     font-size:1.2em;
+     letter-spacing: 2px;
      font-weight:400;
  }
 
  .sec2h1tag
  {
-     margin:0;
      padding-top:0.2%; padding-bottom:0.2%;
      color:rgb(168,168,168);
      text-align:center;
      font-size:1em;
-     letter-spacing: 3px;
+     letter-spacing: 2px;
      font-weight:200;
  }
 
@@ -164,8 +148,8 @@ p
    {
        display:block;
        width:45%;
-       margin-left:0;
-       margin-bottom:5%;
+       /*margin-left:0;
+       margin-bottom:5%;*/
        color: white;
        background-color:rgb(247,188,88);
        text-align: center;
@@ -189,8 +173,6 @@ p
     height:auto;
     background-color:rgb(245,245,245);
  }
-
-.box2, .box3{margin-left:0;}
 
 /* section four */
 
@@ -285,7 +267,6 @@ footer span
     font-size:1em;
     letter-spacing: 1px;
     font-weight:400;
-    padding-left:2.2%;
 }
 
 footer .col1{width:100%;padding:2%;}
@@ -301,7 +282,7 @@ footer .col3 p{width:100%}
 
 /*padding between sections*/
 
-.sec1,.sec2,.sec3,.sec4,.sec5,footer{padding:5%;}
+.sec1,.sec2,.sec3,.sec4,.sec5,footer{padding:4% 8% 4% 8%;}
 
 /* mobile screen settings*/
 @media screen and (max-width: 650px){ .topnav a:not(:first-child) {display: none;}
